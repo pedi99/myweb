@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HALAMAN DEPAN</title>
+</head>
+<body>
+  <h1><i><u><center><marquee behavior="alternate">selamat datang di blog pedi</marquee></u></i></h1>
+   
+    {% include "menu.html" %}
+{% if True%}
+<h1></h1>
+{%endif%}
+{{ nama | upper }}
+
+{% for fruit in buahbuahan %}
+<li>{{ fruit }}</li>
+{% endfor %}
+</body>
+</html>
